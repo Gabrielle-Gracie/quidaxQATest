@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-23T02:13:07.985Z",
+    "end": "2021-09-23T02:13:34.308Z",
+    "duration": 23716,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6b82159d-1195-4e6e-9075-27360d8da3b7",
+      "title": "",
+      "fullFile": "cypress/integration/assessmentTest.js",
+      "file": "cypress/integration/assessmentTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "73d87291-c463-41a6-96ba-014e838dbf8f",
+          "title": "Assessment Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate single checkbox demo",
+              "fullTitle": "Assessment Test Validate single checkbox demo",
+              "timedOut": null,
+              "duration": 7722,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#treemenu .tree-branch:nth-of-type(1) .tree-branch:nth-of-type(1) [href=\"\\#\"]').click();\ncy.get(':nth-child(3) > :nth-child(1) > ul > :nth-child(2) > a').should('contain', 'Checkbox Demo').click();\ncy.get('#isAgeSelected').click();\ncy.get('#txtAge').should('contain', 'Success - Check box is checked');",
+              "err": {},
+              "uuid": "db804bff-ac17-4879-a4df-7521300b2748",
+              "parentUUID": "73d87291-c463-41a6-96ba-014e838dbf8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate Multiple checkbox demo",
+              "fullTitle": "Assessment Test Validate Multiple checkbox demo",
+              "timedOut": null,
+              "duration": 3718,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#treemenu .tree-branch:nth-of-type(1) .tree-branch:nth-of-type(1) [href=\"\\#\"]').should('contain', 'Input Forms').click();\ncy.get('ul#treemenu  ul > li:nth-of-type(1) > ul > li:nth-of-type(2) > a').should('contain', 'Checkbox Demo').click();\ncy.get('#check1').click();\ncy.get('#check1').should('have.value', 'Uncheck All');\ncy.get(':nth-child(5) > label').click();\ncy.get('#check1').should('have.value', 'Check All');",
+              "err": {},
+              "uuid": "2212164b-a035-49e1-817e-933f9d33829b",
+              "parentUUID": "73d87291-c463-41a6-96ba-014e838dbf8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate Single bootstrap modal",
+              "fullTitle": "Assessment Test Validate Single bootstrap modal",
+              "timedOut": null,
+              "duration": 3566,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#treemenu > :nth-child(1) > :nth-child(3) > :nth-child(5)').should('contain', 'Alerts & Modals').click();\ncy.get('li:nth-of-type(5) > ul > li:nth-of-type(2) > a').should('contain', 'Bootstrap Modals').click();\ncy.get('div:nth-of-type(1) > .col-md-4.text-left > .panel.panel-default > .panel-body > .btn.btn-primary').click();\ncy.on('window:alert', text => {\n  expect(text).to.contains('This is the place where the content for the modal dialog displays');\n});\ncy.get('[class] .row:nth-child(2) .modal-footer .btn:nth-of-type(1)').click();",
+              "err": {},
+              "uuid": "982a226a-4f94-4141-8207-b95af62fc019",
+              "parentUUID": "73d87291-c463-41a6-96ba-014e838dbf8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate Multiple bootstrap modal",
+              "fullTitle": "Assessment Test Validate Multiple bootstrap modal",
+              "timedOut": null,
+              "duration": 5032,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#treemenu > :nth-child(1) > :nth-child(3) > :nth-child(5)').click();\ncy.get('li:nth-of-type(5) > ul > li:nth-of-type(2) > a').should('contain', 'Bootstrap Modals').click();\ncy.get('div:nth-of-type(2) > .col-md-4.text-left > .panel.panel-default > .panel-body > .btn.btn-primary').click();\ncy.on('window:alert', text => {\n  expect(text).to.contains('First Modal');\n});\ncy.get('.modal-body > .btn.btn-primary').click();\ncy.get('[class] .row:nth-child(3) div:nth-child(3) .modal-footer .btn:nth-of-type(1)').click();\ncy.get('#myModal .modal-footer .btn:nth-of-type(1)').click();",
+              "err": {},
+              "uuid": "055231f0-feba-4c62-980e-87a9c9ca47d9",
+              "parentUUID": "73d87291-c463-41a6-96ba-014e838dbf8f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate Data List Filter",
+              "fullTitle": "Assessment Test Validate Data List Filter",
+              "timedOut": null,
+              "duration": 3678,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#treemenu .tree-branch:nth-of-type(6) [href=\"\\#\"]').click();\ncy.get('li:nth-of-type(6) > ul > li:nth-of-type(3) > a').should('contain', 'Data List Filter').click();\ncy.get('input#input-search').type('Glenn');",
+              "err": {},
+              "uuid": "64be5c9e-e3a8-47f4-8902-d50c8b28906a",
+              "parentUUID": "73d87291-c463-41a6-96ba-014e838dbf8f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "db804bff-ac17-4879-a4df-7521300b2748",
+            "2212164b-a035-49e1-817e-933f9d33829b",
+            "982a226a-4f94-4141-8207-b95af62fc019",
+            "055231f0-feba-4c62-980e-87a9c9ca47d9",
+            "64be5c9e-e3a8-47f4-8902-d50c8b28906a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23716,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

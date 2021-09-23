@@ -1,0 +1,20 @@
+{
+    "chromeWebSecurity": false,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
+        }
+    },
+    "env": {
+      "url": "https://www.seleniumeasy.com/test"
+    },
+    "defaultCommandTimeout": 100000,
+    "pageLoadTimeout": 100000
+  }
+  
